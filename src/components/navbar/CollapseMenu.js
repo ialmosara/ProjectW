@@ -26,7 +26,11 @@ const CollapseMenu = (props) => {
   return null;
 };
 
-export default CollapseMenu;
+// const Search = styled.input`
+//   width: 100%;
+//   height: 1.5em;
+//   border-radius: 0.5em;
+// `;
 
 const CollapseWrapper = styled(animated.div)`
   background: rgb(153, 204, 255);
@@ -34,12 +38,13 @@ const CollapseWrapper = styled(animated.div)`
   top: 4.5rem;
   left: 0;
   right: 0;
+  z-index: 2;
 `;
 
 const NavLinks = styled.ul`
   list-style-type: none;
   padding: 2rem 1rem 2rem 2rem;
-
+ 
   & li {
     transition: all 300ms linear 0s;
   }
@@ -58,3 +63,5 @@ const NavLinks = styled.ul`
     }
   }
 `;
+
+export default CollapseMenu;

@@ -1,22 +1,13 @@
-import React, { useState } from 'react'
-import Navbar from "./components/navbar/Navbar";
-
-import GlobalStyle from './css/Global';
+import React from 'react'
+import Home from './components/Home';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './style/css/Home.css';
 
 const App = () => {
-  const [navbar, setnavbar] = useState();
-
-  const handleNavbar = () => {
-    setnavbar(!navbar);
-  }
 
   return (
     <>
-      <Navbar
-        navbarState={navbar}
-        handleNavbar={handleNavbar}
-      />
-      <GlobalStyle />
+      <Home/>
     </>
   )
 }

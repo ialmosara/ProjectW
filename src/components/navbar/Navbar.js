@@ -5,6 +5,7 @@ import { useSpring, animated, config } from "react-spring";
 import Brand from "./Brand";
 import BurgerMenu from "./BurgerMenu";
 import CollapseMenu from "./CollapseMenu";
+// import searchButton from '../../images/icons/search.png';
 
 const Navbar = (props) => {
   const barAnimation = useSpring({
@@ -44,8 +45,6 @@ const Navbar = (props) => {
    </>
   )
 }
-
-export default Navbar
 
 const NavBar = styled(animated.nav)`
   position: fixed;
@@ -98,3 +97,5 @@ const BurgerWrapper = styled.div`
     display: none;
   }
 `;
+
+export default Navbar
